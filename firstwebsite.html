@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/min/firstwebsite.css">
+  <link rel="stylesheet" type="text/css" href="css/min/960.css">
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+  <title>First Web Site</title>
+  <!-- created by Pankush Manchanda  -->
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+  <div id="loader"></div>
+  <!-- for loader while loading -->
+  <div id="myDiv" style="display: none">
+    <!-- header started -->
+    <header id="header">
+      <div class="container">
+        <h1>
+           First Web Site
+        </h1>
+        <nav id="nav">
+          <ul>
+            <li>
+              <a href="#">Home</a>
+              <div>
+                <ul>
+                  <li><a href="#">New</a></li>
+                  <li><a href="#">Server</a></li>
+                  <li><a href="#">Function</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">History</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- header ended -->
+    <!-- content area started -->
+    <div class="content">
+      <!-- 960 grid is used in the content area  -->
+      <div class="container_12">
+        <div class="grid_4">
+          <img data-animate="fadeIn" src="images/Building.jpg" alt="Building">
+          <div class="grid-heading">
+            <h2>Infrastructure</h2>
+          </div>
+          <p>
+            Best Infrastructure,green campus and eco-friendly enviroment.
+          </p>
+        </div>
+        <div class="grid_4">
+          <img data-animate="fadeIn" src="images/Team1.jpg" alt="Team">
+          <div class="grid-heading">
+            <h2>Team Spirit</h2>
+          </div>
+          <p>
+            Team spirit is most important to run a organisation successfully.
+          </p>
+        </div>
+        <div class="grid_4">
+          <img data-animate="fadeIn" src="images/Infrastructure.jpg" alt="Infrastructure">
+          <div class="grid-heading">
+            <h2>Enviroment</h2>
+          </div>
+          <p>
+            we will provide a best enviroment to work .
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- this is hero section which will cover full screen -->
+    <section class="hero">
+      <section class="container">
+        <div class="hero-heading center">
+          <h2>This is Hero Section</h2>
+        </div>
+        <img data-animate="fadeIn" src="images/HERO.png" alt="HERO">
+      </section>
+    </section>
+    <div class="content">
+      <div class="container_12">
+        <div class="grid_6">
+          <div style="padding: 25px 10px">
+            <img data-animate="fadeIn" src="images/carrer.png" alt="carrer">
+          </div>
+        </div>
+        <div class="grid_6">
+          <div class="container">
+            <div class="grid-heading">
+              <h2>Help to Grow you Carrer</h2>
+            </div>
+            <p>
+              Technology is the collection of tools, including machinery, modifications, arrangements and procedures used by humans.
+            </p>
+          </div>
+          <div class="container">
+            <p>
+              Methodology is the systematic, theoretical analysis of the methods applied to a field of study. It comprises the theoretical analysis of the body of methods and principles associated with a branch of knowledge.
+            </p>
+          </div>
+          <div class="container">
+            <p>
+              Company Goals & Strategies: Goals and strategies drive a company's success. Goals give an indication of where a company is headed, while strategies indicate how the company is going to get there. Goals aligned with the company's mission, vision and values and strategies aligned with goals are important elements in the successful achievement of both
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- middle content area ended -->
+    <!-- footer started -->
+    <footer class="container-footer">
+      <div class="footer-left">
+        <img src="images/demo.png" alt="demo" />
+        <p class="footer-links">
+          <a href="#">Home</a> ·
+          <a href="#">About</a> ·
+          <a href="#">Services</a> ·
+          <a href="#">History</a> ·
+          <a href="#">Contact</a>
+        </p>
+        <p class="footer-company-name">Pankush © 2015</p>
+      </div>
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <!-- icons used here -->
+          <p><span>117,Stack Route Kormangla </span> Bangalore, India</p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+89512156048</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">manchandapankush@.com</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the Site</span> This is first web site for more information please connect with us.
+        </p>
+        <div class="footer-icons">
+          <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+          <a href="https://linkedin.com"><i class="fa fa-linkedin"></i></a>
+          <a href="https://github.com"><i class="fa fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!-- footer ended -->
+  </div>
+  <script>
+  var myVar;
+
+  //on load calling function
+  function myFunction() {
+    //calling  predefined setTimeOut javascript function and calling show page function after 1 seconds
+    myVar = setTimeout(showPage, 1000);
+  }
+
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+  </script>
+</body>
+
+</html>
